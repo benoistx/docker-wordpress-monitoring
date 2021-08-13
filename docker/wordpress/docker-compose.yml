@@ -4,6 +4,7 @@ services:
     image: wordpress:latest # https://hub.docker.com/_/wordpress/
     ports:
       - 8080:80
+      - 8443:443  
     volumes:
       - ./wp-app:/var/www/html # Full wordpress project
     environment:
